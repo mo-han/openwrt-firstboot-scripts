@@ -1,0 +1,6 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+[ -d /etc/rc.local.d ] && for i in /etc/rc.local.d/* ; do sh "$i" ; done
+
+exit 0
